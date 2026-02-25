@@ -6,11 +6,17 @@
     <title>Counter App</title>
 
     <!-- DaisyUI +Tailwind CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min css" rel="stylesheet" type="text/css"/>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min css" rel="stylesheet" type="text/css"/>
 
     <!-- HTMX -->
-    <script src="https://unpkg.com/htmx.org@2.0.3"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {},
+        },
+    }
+    </script>
 </head>
 <body>
     <div class="min-h-screen flex items-center justify-center bg-base-200">
